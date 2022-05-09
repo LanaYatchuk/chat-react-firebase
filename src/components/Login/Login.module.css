@@ -1,0 +1,11 @@
+.grid {
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+    width: 400px;
+    background-color: rgb(187, 195, 194);
+    align-items: center;
+    
+}
