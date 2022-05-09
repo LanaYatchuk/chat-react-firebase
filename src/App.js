@@ -9,8 +9,11 @@ import './styles/App.css'
 
 function App() {
   const {auth} = useContext(Context)
-  const [loading] = useAuthState(auth)
-
+  const [user, loading, error] = useAuthState(auth)
+ 
+  console.log(user)
+  console.log(error)
+  
   if (loading){
     return <Loader/>
   }

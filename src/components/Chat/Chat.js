@@ -11,14 +11,14 @@ import firebase from 'firebase/compat/app';
 export default function Chat() {
   const {auth, firestore} = useContext(Context)
   const [user] = useAuthState(auth)
-
+  const [value, setValue] = useState('')
 
   const [messages, loading] = useCollectionData(
     firestore.collection('messages').orderBy('createdAt')
   )
 
   console.log(messages)
-  const [value, setValue] = useState('')
+
 
   const sendMessage = async() => {
     firestore.collection('messages').add({
@@ -32,7 +32,9 @@ export default function Chat() {
   }
 
   if (loading) {
-    <Loader/>
+    return  <Loader/>
+   
+
   }
 
     return (
@@ -52,7 +54,7 @@ export default function Chat() {
                   <div>{message.text}</div>
                 </div>
               )
-              : <Loader/>
+             : <Loader/>
               }
 
             </div>
