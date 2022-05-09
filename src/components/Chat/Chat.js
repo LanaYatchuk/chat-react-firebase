@@ -17,7 +17,7 @@ export default function Chat() {
     firestore.collection('messages').orderBy('createdAt')
   )
 
-  console.log(messages)
+  
 
 
   const sendMessage = async() => {
