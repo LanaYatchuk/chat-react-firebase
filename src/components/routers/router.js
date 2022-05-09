@@ -1,7 +1,7 @@
 import Chat from '../Chat/Chat'
 import Login from '../Login/Login'
 
-import {LOGIN_ROUTE, CHAT_ROUTE, NO_MATCH }from './../utils/consts'
+import {LOGIN_ROUTE, CHAT_ROUTE}from './../utils/consts'
 
 
 export const publicRoutes = [
