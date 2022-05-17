@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "chat-react-firebasee",
+    "staging-chat": "chat-react-firebase-87d99"
+  },
+  "targets": {}
+}

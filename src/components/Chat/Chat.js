@@ -43,7 +43,7 @@ export default function Chat() {
             <div className={s.chat_wrapper}>
               
               {messages ? messages.map(message => 
-                <div key={message.key} style={{margin: 5, border: user.uid === message.uid ? '2px solid green' : '2px solid red',
+                <div key={message.key} style={{margin: 5, border: user.uid === message.uid ? '2px solid black' : '2px solid red',
                  marginLeft: user.uid === message.uid ? 'auto' : '10px',
                  width: 'fit-content'
                 }}>
